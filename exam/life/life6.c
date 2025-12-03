@@ -29,10 +29,14 @@ int main(int ac, char** av){
 
 	for(int itr =0;itr < it;itr++){
 		for(int i=0;i<h;i++){
-			for(int j=0; j< w; j++){
+			for(int j=0; j< w; j++)
+			{
 				int n=0;
-				for(int ih=-1; ih<= 1;ih++){
-					for(int jw=-1; jw<=1;jw++){
+				for(int ih=-1; ih<= 1;ih++)
+				{
+
+					for(int jw=-1; jw<=1;jw++)
+					{
 						if((ih || jw) && ((ih+i >= 0 && i+ih < h)&&(j+jw >=0 && j+jw <w)))
 							n+= map[i+ih][jw+j];
 					}
